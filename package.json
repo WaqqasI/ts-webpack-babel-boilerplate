@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "A sample setup using React, Webpack and Babel to build TypeScript code, and using TypeScript for type-checking.",
   "scripts": {
+    "prestart": "webpack",
     "start": "node server.js",
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch",
-    "build": "webpack --progress --colors --mode=production",
-    "start": "webpack-dev-server --config webpack.config.js --progress --colors --open --mode=development"
-  },
+    "build": "webpack --progress --colors --mode=production"  },
   "author": {
     "name": "Alexander T.",
     "email": "alexander.tarasyuk@outlook.com"
