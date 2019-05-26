@@ -10,7 +10,7 @@ class App extends React.Component {
     return (
       <div>
         <p>
-          {greet('naqib')}
+
         <p />
       <div />
     )
