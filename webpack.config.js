@@ -19,7 +19,7 @@ module.exports = {
   },
 
   resolve: {
-    modules: [path.join(__dirname, 'src/util'), path.join(__dirname, 'src/assets'), 'node_modules'],
+    modules: [path.join(__dirname, 'src/assets'), 'node_modules'],
     extensions: ['.ts', '.tsx', '.js', '.json']
   },
 
