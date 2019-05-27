@@ -12,7 +12,9 @@
     "module": "es2015",
     "sourceMap": true,
     "strict": true,
-    "jsx": "react"
+    "jsx": "react",
+    "allowJs": true,
+    "checkJs": true
   },
   "include": [
     "src/**/*"
