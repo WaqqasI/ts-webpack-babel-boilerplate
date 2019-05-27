@@ -5,5 +5,5 @@ function greet(name : string) {
 }
 
 export const Greet = () => {
-  return <p>{greet('AbdulWahid')}</p>
+  return <p>{greet('person')}</p>
 }
