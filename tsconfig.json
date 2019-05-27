@@ -14,7 +14,11 @@
     "strict": true,
     "jsx": "react",
     "allowJs": true,
-    "checkJs": true
+    "checkJs": true,
+    "paths": {
+      "assets/*": ["src/assets/*"],
+      "logger": ["util/logger"]
+    }
   },
   "include": [
     "src/**/*",
