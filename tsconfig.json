@@ -17,7 +17,8 @@
     "checkJs": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "custom.d.ts"
   ],
   "exclude": [
     "node_modules",
