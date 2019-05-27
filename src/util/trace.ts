@@ -1,4 +1,4 @@
-export const trace = (x: any) {
+export default const trace: any = (x: any) => {
   console.log(x);
   return x;
 }
