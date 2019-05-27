@@ -38,7 +38,9 @@
     "file-loader": "^3.0.1",
     "css-loader": "^2.1.1",
     "style-loader": "^0.23.1",
-    "html-loader": "^0.5.5"
+    "html-loader": "^0.5.5",
+    "lodash": "^4.17.11",
+    "@types/lodash": "^4.14.119"
   },
   "resolutions": {
     "terser": "3.14.1"
