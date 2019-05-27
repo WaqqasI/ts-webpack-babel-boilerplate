@@ -4,8 +4,15 @@ const path = require('path');
 const APP_PATH = path.resolve(__dirname, 'src');
 
 module.exports = {
+  mode: 'development',
+  devtool: 'inline-source-map',
   entry: APP_PATH,
 
+    devServer: {
+    contentBase: "./dist",
+    port: process.env.PORT 
+  },
+  
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -16,7 +23,30 @@ module.exports = {
   },
 
   module: {
-    rules: [{ test: /\.(ts|js)x?$/, loader: 'babel-loader', exclude: /node_modules/ }],
+    rules: [
+      { test: /\.(ts|js)x?$/, loader: 'babel-loader', exclude: /node_modules/ },
+      {
+         test: /\.css$/,
+         use: [
+           'style-loader',
+           'css-loader'
+         ]
+       },
+             {
+         test: /\.(png|svg|jpg|gif)$/,
+         use: [
+           'file-loader'
+         ]
+       },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader"
+          }
+        ]
+      }
+    ],
   },
 
   plugins: [
