@@ -30,14 +30,15 @@
     "webpack-dev-server": "3.4.1"
   },
   "dependencies": {
-    "@types/react": "16.8.17",
-    "@types/react-dom": "16.8.4",
+    "@types/react": "^16.7.17",
+    "@types/react-dom": "^16.0.11",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "express": "^4.16.4",
     "file-loader": "^3.0.1",
     "css-loader": "^2.1.1",
-    "style-loader": "^0.23.1"
+    "style-loader": "^0.23.1",
+    "html-loader": "^0.5.5"
   },
   "resolutions": {
     "terser": "3.14.1"
