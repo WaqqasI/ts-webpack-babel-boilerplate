@@ -3,6 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const APP_PATH = path.resolve(__dirname, 'src');
 
+function srcPath(subdir) {
+    return path.join(__dirname, "src", subdir);
+}
+
 module.exports = {
   mode: 'development',
   devtool: 'inline-source-map',
@@ -19,8 +23,12 @@ module.exports = {
   },
 
   resolve: {
-    modules: [path.join(__dirname, 'src/assets'), 'node_modules'],
-    extensions: ['.ts', '.tsx', '.js', '.json']
+    modules: ['node_modules'],
+    extensions: ['.ts', '.tsx', '.js', '.json'],
+    alias: {
+      assets: srcPath('assets'),
+      logger: path.resolve(__dirname, 'src/util/logger')
+    }
   },
 
   module: {
